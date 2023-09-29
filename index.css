@@ -3,3 +3,141 @@
     padding: 0;
     box-sizing: border-box;
 }
+nav{
+    display: flex;
+    align-items: center;
+    gap: 620px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+#navbar-items{
+    display: flex;
+    list-style-type: none;
+    gap: 49px;
+}
+#logo{
+    margin-left: 67px;
+    width: 6%;
+}
+#navbar-items li a{
+    color: rgb(34,64,147);
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+}
+#navbar-items li a:hover{
+    text-decoration: underline yellow ;
+}
+#navbar-items li button{
+    background-color: rgb(253,185,21);
+    color: rgb(34,64,147);
+    font-weight: 600;
+    text-transform: capitalize;
+    width: 280%;
+    height: 120%;
+    text-align: center;
+    box-shadow: 2px 2px 4px rgb(177, 176, 176);
+    margin-left: -30px;
+}
+#topic img{
+    margin-top: 122px;
+    margin-left: 27px;
+    width: 95%;
+}
+#font-edition{
+    color: rgb(34,64,147);
+    font-size: 25px;
+}
+.first-animation{
+    display: flex;
+    align-items: center;
+    padding-left: 27px;
+}
+#image2{
+    width: 20%;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+#image3{
+    width: 25%;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+.div img{
+    border: 2px solid rgb(157,218,200);
+    border-radius: 100%;
+    width: 90%;
+    padding: 10px;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+   animation: box 3s  linear forwards infinite;
+   transform: rotate(360deg);
+}
+.date{
+    color: rgb(34,64,147);
+    font-size: 25px;
+}
+.c-button{
+    display: flex;
+    margin-left: 27px;
+}
+#btn{
+    background-color: rgb(253,185,21);
+    border: 0;
+    text-transform: uppercase;
+    color: rgb(34,64,147);
+    font-weight: 600;
+    font-size: 25px;
+    width: 40%;
+    height: 25%;
+}
+#btn2{
+    background-color: white;
+    border: 1px solid black;
+    text-transform: uppercase;
+    color: rgb(34,64,147);
+    margin-left: 25px;
+    font-weight: 600;
+    font-size: 25px;
+    width: 40%;
+    height: 25%;
+}
+@keyframes box{
+     from{
+        transform: rotate(0deg) ;
+    }
+    to{
+       
+        transform:  rotate(360deg)  ;
+
+
+    } 
+}
+@media screen and ( max-width:475px){
+    nav{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+#logo{
+    margin-left: 67px;
+    width: 10%;
+}
+#navbar-items li a{
+    color: rgb(34,64,147);
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+}
